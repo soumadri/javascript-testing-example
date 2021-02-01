@@ -6,16 +6,25 @@
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
-    "test": "jest"
+    "serve": "parcel index.html &",
+    "test": "jest",
+    "acceptance": "./node_modules/@cucumber/cucumber/bin/cucumber-js --require-module @babel/register --require-module @babel/polyfill -f progress --publish"
   },
-  "dependencies": {
-    "jest": "26.6.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
-    "parcel-bundler": "^1.6.1"
+    "@babel/register": "^7.12.10",
+    "@cucumber/cucumber": "^7.0.0",
+    "chromedriver": "^87.0.0",
+    "cucumber-assert": "^2.0.1",
+    "cucumber-html-reporter": "^5.3.0",
+    "jest": "26.6.3",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.6.1",
+    "selenium-webdriver": "^4.0.0-alpha.8"
   },
   "keywords": []
 }
